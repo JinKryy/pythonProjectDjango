@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .models import URL
 from .forms import URLForm
 from django.views.generic import DetailView, DeleteView
-from .timer import timer
+from .tasks import timer
 
 
 class ShortyDetailView(DetailView):
