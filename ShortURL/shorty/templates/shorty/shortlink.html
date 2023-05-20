@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+
+{% block tittle %}{{ title }}{% endblock %}
+
+{% block content %}
+    <div class="features" id="link">
+        <form method="post" class="forma">
+          {% csrf_token %}
+           {{ form.full_url }}<br>
+          <button class="btn btn-success" type="submit">Сократи же это!</button>
+        </form>
+        <a href="{% url 'shortlink' %}" class="btn btn-warning back">Назад</a>
+    </div>
+{% endblock %}
+

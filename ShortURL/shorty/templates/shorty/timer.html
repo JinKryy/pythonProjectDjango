@@ -1,0 +1,18 @@
+{% extends 'main/layout.html' %}
+
+{% block tittle %}{{ title }}{% endblock %}
+
+{% block content %}
+    <div class="features" id="time-delete">
+        <h1>Таймер на удаление</h1>
+        <form method="post" class="timer">
+          {% csrf_token %}
+          <div class="timer">
+            <input type="number" placeholder="Время в минутах" name="forma" id="time" required min="1" max="600"><br>
+            <a href="{% url 'shortlink' %}"><button class="btn btn-success" type="submit">Запуск</button></a>
+          </div>
+        </form>
+        <a href="{% url 'shortlink' %}" class="btn btn-warning back">Назад</a>
+    </div>
+{% endblock %}
+

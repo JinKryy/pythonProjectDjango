@@ -1,0 +1,218 @@
+body {
+    background: #2b3942 url(../img/background1.jpg) no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+header{
+    background: rgba(66, 66, 66, 0.25);
+    width: 100%;
+    top: 0;
+    height: 110px;
+    color: blueviolet;
+    border-bottom: 4px solid rgb(255, 255, 255);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    z-index: 3;
+}
+
+.head {
+    width: 390px;
+    margin: auto;
+
+}
+
+header img{
+    width: 215px;
+    height: 93px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+
+}
+
+/*header .logo{*/
+/*    font-size: 60px;*/
+/*    font-weight: bold;*/
+/*    float: left;*/
+/*}*/
+
+
+.features {
+    margin-left: auto;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.features h1{
+    font-size: 50px;
+    margin-top: 150px;
+    color: #ffa600;
+    font-family: "Gothland";
+}
+
+.features p{
+    max-width: 400px;
+    margin: 20px 12px;
+    color: #c6d8f3;
+    font-family: Arial;
+}
+
+
+.timer form{
+    height: 96.5px;
+
+}
+.timer div{
+    width: 200px;
+    height: 106.5px;
+    margin: 20px auto;
+    margin-bottom: 10px;
+}
+
+.timer .btn-success{
+    width: 80px;
+
+}
+
+.timer input{
+    margin-top: 10px;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-family: inherit;
+    font-size: 23px;
+    font-weight: 400;
+    color: #fda501;
+    background-color: rgba(66, 66, 66, 0.25);
+    backdrop-filter: blur(6px);
+    border: 2px solid #ffffff;
+    border-radius: 7px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+input[type="number"]::-webkit-input-placeholder {
+    color: rgba(251, 164, 2, 0.8);
+    font-family: Arial;
+    font-size: 22px;
+}
+
+#time-delete{
+    margin-top: 170px;
+}
+
+
+.alert-warning h3{
+    color: #fda501;
+    font-family: Arial;
+    font-size: 30px;
+}
+
+#url {
+    color: rgb(59, 224, 148);
+    transition: all 0.4s;
+    font-family: "Gothland";
+
+}
+#url:hover{
+    color: #ffffff;
+}
+
+div .alert-warning {
+    width: 500px;
+    margin: 20px auto;
+    text-align: left;
+    background-color: rgba(66, 66, 66, 0.25);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgb(251, 164, 2);
+    border-radius: 10px;
+
+}
+
+a{
+    font-family: "Gothland";
+    font-size: 30px ;
+    text-decoration: none;
+    color: #000000;
+}
+
+.btn-warning {
+    font-family: "Gothland";
+    font-size: 15px ;
+}
+
+.btn-danger {
+    font-family: "Gothland";
+    font-size: 15px ;
+}
+
+.btn-success {
+    font-family: "Gothland";
+    font-size: 15px ;
+}
+
+.forma .form-control{
+    margin:0 auto;
+    width: 1000px;
+    font-family: Arial;
+    border: solid 3px #ffffff;
+    border-bottom-radius: 2px;
+    background-color: rgba(66, 66, 66, 0.25);
+    backdrop-filter: blur(5px);
+    color: #c6d8f3 !important;
+    font-size: 18px;
+}
+
+input[type="text"]::-webkit-input-placeholder{
+    color: rgba(251, 164, 2, 0.8);
+    font-family: Arial;
+    font-size: 18px;
+}
+
+#link{
+    margin: 170px auto;
+}
+.back {
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    width: 80px;
+    height: 36.5px;
+}
+
+.delete{
+    border: 2px solid rgb(251, 164, 2);
+    width: 25%;
+    height: 30%;
+    background-color: rgba(66, 66, 66, 0.25);
+    backdrop-filter: blur(5px);
+    color: #fba402;
+    margin: 0 auto;
+    margin-top: 25vh;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.delete h3{
+    text-align: center;
+    font-family: Arial;
+
+}
+
+.delete button{
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+    width: 200px;
+}
+
+
+@font-face {
+font-family: "Gothland";
+src: url("../fonts/Gothland.ttf") format("truetype");
+font-style: normal;
+font-weight: normal;
+ }

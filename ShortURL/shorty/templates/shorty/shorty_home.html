@@ -1,0 +1,20 @@
+{% extends 'main/layout.html' %}
+
+{% block tittle %}{{ title }}{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ title }}</h1>
+        {% for el in URL %}
+        <div class="alert alert-warning">
+            <h3>Короткая ссылка: <a href="http://127.0.0.1:8000/{{ el.url_hash }}" id="url">127.0.0.1:8000/{{ el.url_hash }}</a></h3>
+            <p><b>Оригинальная ссылка:</b> {{el.full_url}}</p>
+            <p><b>{{el.created_at}}</b></p>
+            <p><b>Переходы:</b> {{el.clicks}}</p>
+            <a href="{% url 'shortlink-detail' el.id %}/delete" class="btn btn-danger">Удалить</a>
+            <a href="{% url 'shutdown' el.id %}" class="btn btn-warning">Таймер на удаление ссылки</a>
+        </div>
+        {% endfor %}
+        <a href="{% url 'shorty_home' %}" class="btn btn-success"> Создать новую ссылку</a>
+    </div>
+{% endblock %}

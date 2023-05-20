@@ -1,0 +1,11 @@
+{% extends 'main/layout.html' %}
+
+{% block tittle %}{{ title }}{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ shortylink.url_hash }}</h1>
+        <p>{{ shortylink.full_url }}</p>
+        <p>{{ shortylink.created_at }}</p>
+    </div>
+{% endblock %}
