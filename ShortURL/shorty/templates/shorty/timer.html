@@ -9,10 +9,10 @@
           {% csrf_token %}
           <div class="timer">
             <input type="number" placeholder="Время в минутах" name="forma" id="time" required min="1" max="600"><br>
-            <a href="{% url 'shortlink' %}"><button class="btn btn-success" type="submit">Запуск</button></a>
+            <a href="{% url 'shortlink' %}"><button class="btn btn-danger" type="submit"><p>Запуск</p></button></a>
           </div>
         </form>
-        <a href="{% url 'shortlink' %}" class="btn btn-warning back">Назад</a>
+        <a href="{% url 'shortlink' %}" class="btn btn-warning back"><p>Назад</p></a>
     </div>
 {% endblock %}
 

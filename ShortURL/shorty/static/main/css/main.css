@@ -1,6 +1,6 @@
 body {
-    background: #2b3942 url(../img/background1.jpg) no-repeat;
-    background-size: 100%;
+    background: #96a1a6 url(../img/background5.jpg) no-repeat;
+    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -32,13 +32,6 @@ header img{
 
 }
 
-/*header .logo{*/
-/*    font-size: 60px;*/
-/*    font-weight: bold;*/
-/*    float: left;*/
-/*}*/
-
-
 .features {
     margin-left: auto;
     text-align: center;
@@ -48,15 +41,15 @@ header img{
 .features h1{
     font-size: 50px;
     margin-top: 150px;
-    color: #ffa600;
+    color: #ffffff;
     font-family: "Gothland";
 }
 
 .features p{
     max-width: 400px;
     margin: 20px 12px;
-    color: #c6d8f3;
-    font-family: Arial;
+    color: #ffffff;
+    font-family: Roboto;
 }
 
 
@@ -71,11 +64,6 @@ header img{
     margin-bottom: 10px;
 }
 
-.timer .btn-success{
-    width: 80px;
-
-}
-
 .timer input{
     margin-top: 10px;
     box-sizing: border-box;
@@ -85,7 +73,7 @@ header img{
     font-family: inherit;
     font-size: 23px;
     font-weight: 400;
-    color: #fda501;
+    color: #ffffff;
     background-color: rgba(66, 66, 66, 0.25);
     backdrop-filter: blur(6px);
     border: 2px solid #ffffff;
@@ -94,8 +82,8 @@ header img{
 }
 
 input[type="number"]::-webkit-input-placeholder {
-    color: rgba(251, 164, 2, 0.8);
-    font-family: Arial;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Roboto;
     font-size: 22px;
 }
 
@@ -105,19 +93,19 @@ input[type="number"]::-webkit-input-placeholder {
 
 
 .alert-warning h3{
-    color: #fda501;
-    font-family: Arial;
+    color: #ffffff;
+    font-family: Roboto;
     font-size: 30px;
 }
 
 #url {
-    color: rgb(59, 224, 148);
+    color: rgb(245, 199, 20);
     transition: all 0.4s;
     font-family: "Gothland";
 
 }
 #url:hover{
-    color: #ffffff;
+    color: #e5691e;
 }
 
 div .alert-warning {
@@ -126,7 +114,7 @@ div .alert-warning {
     text-align: left;
     background-color: rgba(66, 66, 66, 0.25);
     backdrop-filter: blur(10px);
-    border: 2px solid rgb(251, 164, 2);
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
 
 }
@@ -139,35 +127,95 @@ a{
 }
 
 .btn-warning {
-    font-family: "Gothland";
-    font-size: 15px ;
+    color:transparent;
+    border: 2px solid white;
+    background: rgba(255, 255, 255, 0);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.btn-warning:hover{
+    background: rgba(120, 152, 213, 0.4);
+    border-color: white;
+}
+.btn-warning p{
+    color: white;
+    margin: 0;
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: bold;
+    letter-spacing: 1.3px;
 }
 
+
 .btn-danger {
-    font-family: "Gothland";
-    font-size: 15px ;
+    background-color: rgba(255, 255, 255, 1);
+    border: 2px solid white;
+    overflow:hidden;
+    display:inline-block;
+    font-weight:bold;
+    color:transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.btn-danger:hover{
+    background-color: #d64240;
+    border-color: #d64240;
+}
+
+.btn-danger p{
+    background: url(../img/background5.jpg) -9px -7px repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    display:block;
+    margin: 0;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1.3px;
 }
 
 .btn-success {
-    font-family: "Gothland";
-    font-size: 15px ;
+    color:transparent;
+    border: 2px solid white;
+    background: rgba(255, 255, 255, 0);
+    margin-bottom: 20px;
+}
+
+.btn-success:hover {
+    background: rgba(120, 152, 213, 0.4);
+    border-color: white;
+}
+.btn-success p{
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1.3px;
 }
 
 .forma .form-control{
     margin:0 auto;
     width: 1000px;
-    font-family: Arial;
+    font-family: Roboto;
     border: solid 3px #ffffff;
     border-bottom-radius: 2px;
     background-color: rgba(66, 66, 66, 0.25);
     backdrop-filter: blur(5px);
-    color: #c6d8f3 !important;
+    color: #ffffff !important;
     font-size: 18px;
 }
 
 input[type="text"]::-webkit-input-placeholder{
-    color: rgba(251, 164, 2, 0.8);
-    font-family: Arial;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Roboto;
     font-size: 18px;
 }
 
@@ -175,20 +223,16 @@ input[type="text"]::-webkit-input-placeholder{
     margin: 170px auto;
 }
 .back {
-    margin: auto;
-    display: block;
     margin-top: 10px;
-    width: 80px;
-    height: 36.5px;
 }
 
 .delete{
-    border: 2px solid rgb(251, 164, 2);
-    width: 25%;
+    border: 2px solid rgb(255, 255, 255);
+    width: 250px;
     height: 30%;
     background-color: rgba(66, 66, 66, 0.25);
     backdrop-filter: blur(5px);
-    color: #fba402;
+    color: #ffffff;
     margin: 0 auto;
     margin-top: 25vh;
     padding: 20px;
@@ -198,7 +242,7 @@ input[type="text"]::-webkit-input-placeholder{
 
 .delete h3{
     text-align: center;
-    font-family: Arial;
+    font-family: Roboto;
 
 }
 

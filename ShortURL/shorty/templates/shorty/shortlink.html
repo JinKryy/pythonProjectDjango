@@ -7,9 +7,9 @@
         <form method="post" class="forma">
           {% csrf_token %}
            {{ form.full_url }}<br>
-          <button class="btn btn-success" type="submit">Сократи же это!</button>
+          <button class="btn btn-danger" type="submit"><p>Сократи же это!</p></button>
         </form>
-        <a href="{% url 'shortlink' %}" class="btn btn-warning back">Назад</a>
+        <a href="{% url 'shortlink' %}" class="btn btn-warning back"><p>Назад</p></a>
     </div>
 {% endblock %}
 

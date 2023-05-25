@@ -11,10 +11,10 @@
             <p><b>Оригинальная ссылка:</b> {{el.full_url}}</p>
             <p><b>{{el.created_at}}</b></p>
             <p><b>Переходы:</b> {{el.clicks}}</p>
-            <a href="{% url 'shortlink-detail' el.id %}/delete" class="btn btn-danger">Удалить</a>
-            <a href="{% url 'shutdown' el.id %}" class="btn btn-warning">Таймер на удаление ссылки</a>
+            <a href="{% url 'shortlink-detail' el.id %}/delete" class="btn btn-danger"><p>Удалить</p></a>
+            <a href="{% url 'shutdown' el.id %}" class="btn btn-warning"><p>Таймер на удаление</p></a>
         </div>
         {% endfor %}
-        <a href="{% url 'shorty_home' %}" class="btn btn-success"> Создать новую ссылку</a>
+        <a href="{% url 'shorty_home' %}" class="btn btn-success"><p>Новая ссылка</p></a>
     </div>
 {% endblock %}

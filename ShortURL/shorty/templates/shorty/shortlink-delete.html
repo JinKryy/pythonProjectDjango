@@ -7,8 +7,8 @@
       <h3>Вы точно хотите удалить ссылку?</h3>
       <form method="post">
         {% csrf_token %}
-        <button class="btn btn-danger" type="submit">Да</button>
+        <button class="btn btn-danger" type="submit"><p>Да</p></button>
       </form>
-        <a href="{% url 'shortlink' %}", class="not"><button class="btn btn-success">Нет</button></a>
+        <a href="{% url 'shortlink' %}", class="not"><button class="btn btn-success"><p>Нет</p></button></a>
     </div>
 {% endblock %}
